@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-fredoka: "Fredoka", "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #1e3a8a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #dbeafe;
+  --color-on-primary-container: #1e3a8a;
+  --color-primary-fixed: #e2eafc;
+  --color-on-primary-fixed: #1e3a8a;
+  --color-primary-fixed-dim: #93c5fd;
+
+  --color-secondary: #0d9488;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ccfbf1;
+  --color-on-secondary-container: #0d9488;
+  --color-secondary-fixed: #e2f4f1;
+  --color-on-secondary-fixed: #0d9488;
+
+  --color-tertiary: #6d28d9;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #f5f3ff;
+  --color-on-tertiary-container: #6d28d9;
+  --color-tertiary-fixed: #ede9fe;
+  --color-on-tertiary-fixed: #6d28d9;
+
+  --color-surface: #f8fafc;
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #475569;
+  --color-surface-container-low: #f1f5f9;
+  --color-surface-container: #e2e8f0;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-high: #cbd5e1;
+  --color-outline: #94a3b8;
+  --color-outline-variant: #cbd5e1;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "NAMAHA",
+  "description": "A premier multi-specialty clinical care center in Virar West providing expert Orthopedics, Women's Health, and Mental Health services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
